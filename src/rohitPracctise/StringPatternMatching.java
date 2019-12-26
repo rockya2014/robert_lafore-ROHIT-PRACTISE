@@ -5,7 +5,7 @@ public class StringPatternMatching {
 
     static String str1 = "ABBBBBCCCCCDDDDDD";
 
-    static String pstr2 = "ABBBBBCCCCDDDDDD";
+    static String pstr2 = "BC";
     // Creating array of string length
     static char[] chStr1 = str1.toCharArray();
 
@@ -26,7 +26,7 @@ public class StringPatternMatching {
 
                 if (chStr1[i + j] == chPStr2[j]) {
 
-                    System.out.println("chStr1[i+j]==chPStr2[j]" + "i::" + i + "::" + chStr1[i + j] + "::" + "j::" + j + "::" + chPStr2[j]);
+                    System.out.println("chStr1[i+j]==chPStr2[j]" + "i+j::" + i + "::" + chStr1[i + j] + "::" + "j::" + j + "::" + chPStr2[j]);
                     if (captureindexPatternFoundFlag) {
                         captureindexPatternFound = i;
                         captureindexPatternFoundFlag = false;
