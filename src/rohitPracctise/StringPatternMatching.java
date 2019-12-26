@@ -5,7 +5,7 @@ public class StringPatternMatching {
 
     static String str1 = "ABBBBBCCCCCDDDDDD";
 
-    static String pstr2 = "DD";
+    static String pstr2 = "ABBBBBCCCCDDDDDD";
     // Creating array of string length
     static char[] chStr1 = str1.toCharArray();
 
@@ -22,7 +22,7 @@ public class StringPatternMatching {
         boolean captureindexPatternFoundFlag = true;
         for (int i = 0; i < lchStr1; i++) {
 
-            for (int j = 0; j < lpchStr2; j++) {
+            for (int j = 0; j < lpchStr2 && (i + j) < lchStr1; j++) {
 
                 if (chStr1[i + j] == chPStr2[j]) {
 
